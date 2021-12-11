@@ -11,7 +11,7 @@ A website that offers custom made passwords based on inputed criteria.
 *JavaScript
 
 ## Website
-----
+https://zachsteuer98.github.io/password-generator/
 
 ## Contribution
 Made with ❤️ by Zachary Steuer
