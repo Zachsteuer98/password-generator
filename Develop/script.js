@@ -1,7 +1,5 @@
 // Assignment code here
 
-<<<<<<< HEAD
-=======
 var generatePassword = function() {
 
  let promptLength = window.prompt("Please choose how many characters you would like your password to have. Choose between 8 and 128 characters.")
@@ -53,9 +51,33 @@ if (chooseSpecialCharacters) {
   chooseSpecialCharacters = false;
 };
 
-}
+//pull characters from charset
 
->>>>>>> feature/#characters-prompt
+let charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+{}:<>?-=[];',./"
+if (chooseUppercase) {
+  charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+}
+if (chooseLowercase) {
+  charset = "abcdefghijklmnopqrstuvwxyz"
+}
+if (chooseNumbers) {
+  charset = "1234567890"
+}
+if (chooseSpecialCharacters) {
+  charset = "!@#$%^&*()_+{}:<>?-=[];',./</>"
+};
+
+// create password array
+
+let  newPassword = "";
+
+for (let i=0; i < promptLength; i++)  {
+  newPassword += charset.charAt(Math.floor(Math.random() * charset.length));
+};
+return newPassword;
+};
+
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
