@@ -2,26 +2,6 @@
 
 var generatePassword = function() {
 
-//prompt for number of characters
-// let characterPrompt = window.prompt()
-// if (parseInt(characterPrompt) >= 8 && parseInt(characterPrompt) <= 128) {
-//   characterPrompt = Math.floor(characterPromt); 
-//   console.log(characterPrompt)
-// }
-// else if (parseInt(characterPrompt) < 8) {
-//   window.alert("Your password is less than 8 characters, please try again")
-//   return generatePassword()
-// }
-// else if (parseInt(characterPrompt) > 128) {
-//   window.alert("Your password is more than 128 characters, please try again")
-//   return generatePassword()
-// }
-// else {
-//   window.alert("Please enter a valid response, please try again")
-//   return generatePassword()
-// };
-
- // Window Prompt choose a password length
  let promptLength = window.prompt("Please choose how many characters you would like your password to have. Choose between 8 and 128 characters.")
  if (parseInt(promptLength) >= 8 && parseInt(promptLength) <= 128) {
    promptLength = Math.floor(promptLength);
